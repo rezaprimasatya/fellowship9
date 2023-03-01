@@ -23,3 +23,5 @@ The workflow orchestration process could be broken down into the following steps
 
 Workflow orchestration tools such as Apache Airflow, Apache NiFi, Google Cloud Dataflow and Google Cloud Composer can be used to manage and automate the various components of the data lake workflow orchestration process. These tools provide a graphical interface for designing and managing workflows, making it easier to monitor and troubleshoot issues that arise during the data lake workflow process.
 
+# DATA LAKE - Workflow Orchestration Diagram
+![Architecture](/attached/Fellowship9-datalake_architecture.png)

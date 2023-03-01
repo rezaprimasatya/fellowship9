@@ -18,3 +18,6 @@ The content of a data lake is not limited to these types of data. Organizations 
 - Unstructured Data: Unstructured data is data that does not have a predefined structure or format. Unstructured data includes data in formats such as text, images, videos, and audio files. Unstructured data is often used for content management, sentiment analysis, and social media monitoring.
 - Machine-generated Data: Machine-generated data is data that is created by automated processes, such as IoT devices, sensors, and log files. Machine-generated data is typically unstructured or semi-structured and can be used for predictive maintenance, anomaly detection, and real-time monitoring.
 - Metadata: Metadata is data that describes other data. Metadata includes information such as data lineage, data quality, and data usage. Metadata is used to help manage and organize the data stored in the data lake and to make it easier to search and discover.
+
+# DATA LAKE - Architecture
+![Architecture](/attached/Fellowship9-datalake_architecture.png)
