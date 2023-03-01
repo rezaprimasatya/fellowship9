@@ -101,3 +101,6 @@ Access Airflow UI: Open a web browser and go to http://localhost:8080 to access 
 Define DAGs and tasks: You can define DAGs and tasks in the dags/ directory and plugins in the plugins/ directory. Airflow will automatically detect and load these files when the container starts.
 
 With this setup, you can easily test and develop data pipelines using Airflow and Docker, without worrying about installing dependencies or configuring a complex environment.
+
+We can find some image version of Airflow in Docker Hub
+[![Build Status](https://www.unixtutorial.org/images/software/docker-hub.png)](https://hub.docker.com/r/apache/airflow)
