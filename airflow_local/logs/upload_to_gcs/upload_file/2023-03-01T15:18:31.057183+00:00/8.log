@@ -1,0 +1,25 @@
+[2023-03-01 15:33:18,242] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: upload_to_gcs.upload_file 2023-03-01T15:18:31.057183+00:00 [queued]>
+[2023-03-01 15:33:18,276] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: upload_to_gcs.upload_file 2023-03-01T15:18:31.057183+00:00 [queued]>
+[2023-03-01 15:33:18,278] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-01 15:33:18,279] {taskinstance.py:1069} INFO - Starting attempt 8 of 8
+[2023-03-01 15:33:18,280] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-01 15:33:18,315] {taskinstance.py:1089} INFO - Executing <Task(PythonOperator): upload_file> on 2023-03-01T15:18:31.057183+00:00
+[2023-03-01 15:33:18,324] {standard_task_runner.py:52} INFO - Started process 124 to run task
+[2023-03-01 15:33:18,335] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'upload_to_gcs', 'upload_file', '2023-03-01T15:18:31.057183+00:00', '--job-id', '5611', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/07_gcp.py', '--cfg-path', '/tmp/tmp4fupsb_3', '--error-file', '/tmp/tmpx6x7qg4x']
+[2023-03-01 15:33:18,341] {standard_task_runner.py:77} INFO - Job 5611: Subtask upload_file
+[2023-03-01 15:33:18,443] {logging_mixin.py:104} INFO - Running <TaskInstance: upload_to_gcs.upload_file 2023-03-01T15:18:31.057183+00:00 [running]> on host c1556e8405ac
+[2023-03-01 15:33:18,522] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=upload_to_gcs
+AIRFLOW_CTX_TASK_ID=upload_file
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-01T15:18:31.057183+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-01T15:18:31.057183+00:00
+[2023-03-01 15:33:18,561] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/contrib/hooks/gcs_hook.py:39 DeprecationWarning: The google_cloud_storage_conn_id parameter has been deprecated. You should pass the gcp_conn_id parameter.
+[2023-03-01 15:33:19,492] {gcs.py:485} INFO - File ./dags/rezaprimasatya.txt uploaded to example_file_2023-03-01T15:33:18.529120.txt in fellowship9 bucket
+[2023-03-01 15:33:19,494] {logging_mixin.py:104} INFO - File uploaded to GCS bucket fellowship9 with filename example_file_2023-03-01T15:33:18.529120.txt
+[2023-03-01 15:33:19,495] {python.py:118} INFO - Done. Returned value was: None
+[2023-03-01 15:33:19,523] {taskinstance.py:1192} INFO - Marking task as SUCCESS. dag_id=upload_to_gcs, task_id=upload_file, execution_date=20230301T151831, start_date=20230301T153318, end_date=20230301T153319
+[2023-03-01 15:33:19,585] {taskinstance.py:1246} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-01 15:33:19,615] {local_task_job.py:146} INFO - Task exited with return code 0

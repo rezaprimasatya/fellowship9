@@ -1,0 +1,8 @@
+[2023-03-01 13:15:45,574] {scheduler_job.py:182} INFO - Started process (PID=16128) to work on /opt/airflow/dags/from datetime import datetime, timedelta.py
+[2023-03-01 13:15:45,581] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/from datetime import datetime, timedelta.py for tasks to queue
+[2023-03-01 13:15:45,589] {logging_mixin.py:104} INFO - [2023-03-01 13:15:45,588] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/from datetime import datetime, timedelta.py
+[2023-03-01 13:15:45,975] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['postgres_operator']) retrieved from /opt/airflow/dags/from datetime import datetime, timedelta.py
+[2023-03-01 13:15:46,087] {logging_mixin.py:104} INFO - [2023-03-01 13:15:46,087] {dag.py:1824} INFO - Sync 1 DAGs
+[2023-03-01 13:15:46,146] {logging_mixin.py:104} INFO - [2023-03-01 13:15:46,146] {dag.py:1843} INFO - Creating ORM DAG for postgres_operator
+[2023-03-01 13:15:46,543] {logging_mixin.py:104} INFO - [2023-03-01 13:15:46,543] {dag.py:2280} INFO - Setting next_dagrun for postgres_operator to 2021-12-19T00:00:00+00:00
+[2023-03-01 13:15:46,595] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/from datetime import datetime, timedelta.py took 1.067 seconds

@@ -1,0 +1,43 @@
+[2023-03-01 13:26:59,137] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: postgres_operator.create_postgres_table 2021-12-30T00:00:00+00:00 [queued]>
+[2023-03-01 13:26:59,175] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: postgres_operator.create_postgres_table 2021-12-30T00:00:00+00:00 [queued]>
+[2023-03-01 13:26:59,176] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-01 13:26:59,177] {taskinstance.py:1069} INFO - Starting attempt 3 of 6
+[2023-03-01 13:26:59,178] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-01 13:26:59,231] {taskinstance.py:1089} INFO - Executing <Task(PostgresOperator): create_postgres_table> on 2021-12-30T00:00:00+00:00
+[2023-03-01 13:26:59,241] {standard_task_runner.py:52} INFO - Started process 22911 to run task
+[2023-03-01 13:26:59,268] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'postgres_operator', 'create_postgres_table', '2021-12-30T00:00:00+00:00', '--job-id', '5519', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/06_postgres_operator.py', '--cfg-path', '/tmp/tmpm5p3yug9', '--error-file', '/tmp/tmpz4imphao']
+[2023-03-01 13:26:59,270] {standard_task_runner.py:77} INFO - Job 5519: Subtask create_postgres_table
+[2023-03-01 13:26:59,617] {logging_mixin.py:104} INFO - Running <TaskInstance: postgres_operator.create_postgres_table 2021-12-30T00:00:00+00:00 [running]> on host abe4c4997ef7
+[2023-03-01 13:26:59,887] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=dataheroes
+AIRFLOW_CTX_DAG_ID=postgres_operator
+AIRFLOW_CTX_TASK_ID=create_postgres_table
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-30T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-12-30T00:00:00+00:00
+[2023-03-01 13:26:59,889] {postgres.py:69} INFO - Executing: 
+            create table if not exists fellowship_member (
+                id serial,
+                name text not null,
+                age  int  not null,
+                address char(50),
+                primary key (id)
+            )
+        
+[2023-03-01 13:26:59,924] {base.py:78} INFO - Using connection to: id: fellowship_postgres. Host: 192.168.32.3, Port: 5432, Schema: fellowship9, Login: airflow, Password: XXXXXXXX, extra: None
+[2023-03-01 13:26:59,934] {dbapi.py:180} INFO - Running statement: 
+            create table if not exists fellowship_member (
+                id serial,
+                name text not null,
+                age  int  not null,
+                address char(50),
+                primary key (id)
+            )
+        , parameters: None
+[2023-03-01 13:26:59,944] {dbapi.py:186} INFO - Rows affected: -1
+[2023-03-01 13:26:59,951] {postgres.py:73} INFO - NOTICE:  relation "fellowship_member" already exists, skipping
+
+[2023-03-01 13:26:59,995] {taskinstance.py:1192} INFO - Marking task as SUCCESS. dag_id=postgres_operator, task_id=create_postgres_table, execution_date=20211230T000000, start_date=20230301T132659, end_date=20230301T132659
+[2023-03-01 13:27:00,535] {taskinstance.py:1246} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-03-01 13:27:00,576] {local_task_job.py:146} INFO - Task exited with return code 0

@@ -1,0 +1,22 @@
+[2023-03-01 12:36:35,193] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: with_python_operator.get_age 2022-10-31T09:05:00+00:00 [queued]>
+[2023-03-01 12:36:35,427] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: with_python_operator.get_age 2022-10-31T09:05:00+00:00 [queued]>
+[2023-03-01 12:36:35,442] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-01 12:36:35,444] {taskinstance.py:1069} INFO - Starting attempt 1 of 2
+[2023-03-01 12:36:35,445] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-01 12:36:35,620] {taskinstance.py:1089} INFO - Executing <Task(PythonOperator): get_age> on 2022-10-31T09:05:00+00:00
+[2023-03-01 12:36:35,662] {standard_task_runner.py:52} INFO - Started process 9407 to run task
+[2023-03-01 12:36:35,791] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'with_python_operator', 'get_age', '2022-10-31T09:05:00+00:00', '--job-id', '2142', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/02_python_operator.py', '--cfg-path', '/tmp/tmp2w9o9ujl', '--error-file', '/tmp/tmpii5rylml']
+[2023-03-01 12:36:35,804] {standard_task_runner.py:77} INFO - Job 2142: Subtask get_age
+[2023-03-01 12:36:36,199] {logging_mixin.py:104} INFO - Running <TaskInstance: with_python_operator.get_age 2022-10-31T09:05:00+00:00 [running]> on host abe4c4997ef7
+[2023-03-01 12:36:36,592] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=dataheroes
+AIRFLOW_CTX_DAG_ID=with_python_operator
+AIRFLOW_CTX_TASK_ID=get_age
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-31T09:05:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-31T09:05:00+00:00
+[2023-03-01 12:36:36,768] {python.py:118} INFO - Done. Returned value was: None
+[2023-03-01 12:36:37,019] {taskinstance.py:1192} INFO - Marking task as SUCCESS. dag_id=with_python_operator, task_id=get_age, execution_date=20221031T090500, start_date=20230301T123635, end_date=20230301T123637
+[2023-03-01 12:36:37,753] {taskinstance.py:1246} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-01 12:36:37,845] {local_task_job.py:146} INFO - Task exited with return code 0

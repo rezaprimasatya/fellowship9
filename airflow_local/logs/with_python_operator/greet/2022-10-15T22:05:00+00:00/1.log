@@ -1,0 +1,24 @@
+[2023-03-01 12:22:08,375] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: with_python_operator.greet 2022-10-15T22:05:00+00:00 [queued]>
+[2023-03-01 12:22:08,464] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: with_python_operator.greet 2022-10-15T22:05:00+00:00 [queued]>
+[2023-03-01 12:22:08,466] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-01 12:22:08,467] {taskinstance.py:1069} INFO - Starting attempt 1 of 2
+[2023-03-01 12:22:08,467] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-01 12:22:08,566] {taskinstance.py:1089} INFO - Executing <Task(PythonOperator): greet> on 2022-10-15T22:05:00+00:00
+[2023-03-01 12:22:08,594] {standard_task_runner.py:52} INFO - Started process 4995 to run task
+[2023-03-01 12:22:08,641] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'with_python_operator', 'greet', '2022-10-15T22:05:00+00:00', '--job-id', '1044', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/02_python_operator.py', '--cfg-path', '/tmp/tmppr448ysz', '--error-file', '/tmp/tmpbpwzaint']
+[2023-03-01 12:22:08,645] {standard_task_runner.py:77} INFO - Job 1044: Subtask greet
+[2023-03-01 12:22:08,930] {logging_mixin.py:104} INFO - Running <TaskInstance: with_python_operator.greet 2022-10-15T22:05:00+00:00 [running]> on host abe4c4997ef7
+[2023-03-01 12:22:09,145] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=dataheroes
+AIRFLOW_CTX_DAG_ID=with_python_operator
+AIRFLOW_CTX_TASK_ID=greet
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-15T22:05:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-15T22:05:00+00:00
+[2023-03-01 12:22:09,149] {logging_mixin.py:104} INFO - some dict:  {'a': 1, 'b': 2}
+[2023-03-01 12:22:09,240] {logging_mixin.py:104} INFO - Hello World! My name is Reza Primasatya, and I am 17 years old!
+[2023-03-01 12:22:09,241] {python.py:118} INFO - Done. Returned value was: None
+[2023-03-01 12:22:09,352] {taskinstance.py:1192} INFO - Marking task as SUCCESS. dag_id=with_python_operator, task_id=greet, execution_date=20221015T220500, start_date=20230301T122208, end_date=20230301T122209
+[2023-03-01 12:22:09,527] {taskinstance.py:1246} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-01 12:22:09,622] {local_task_job.py:146} INFO - Task exited with return code 0

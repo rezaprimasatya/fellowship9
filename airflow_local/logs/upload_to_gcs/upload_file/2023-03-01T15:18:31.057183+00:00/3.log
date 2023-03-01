@@ -1,0 +1,57 @@
+[2023-03-01 15:23:27,358] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: upload_to_gcs.upload_file 2023-03-01T15:18:31.057183+00:00 [queued]>
+[2023-03-01 15:23:27,392] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: upload_to_gcs.upload_file 2023-03-01T15:18:31.057183+00:00 [queued]>
+[2023-03-01 15:23:27,393] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-01 15:23:27,394] {taskinstance.py:1069} INFO - Starting attempt 3 of 3
+[2023-03-01 15:23:27,395] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-01 15:23:27,434] {taskinstance.py:1089} INFO - Executing <Task(PythonOperator): upload_file> on 2023-03-01T15:18:31.057183+00:00
+[2023-03-01 15:23:27,440] {standard_task_runner.py:52} INFO - Started process 104 to run task
+[2023-03-01 15:23:27,458] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'upload_to_gcs', 'upload_file', '2023-03-01T15:18:31.057183+00:00', '--job-id', '5606', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/07_gcp.py', '--cfg-path', '/tmp/tmpdatmz51_', '--error-file', '/tmp/tmprl5y2qli']
+[2023-03-01 15:23:27,465] {standard_task_runner.py:77} INFO - Job 5606: Subtask upload_file
+[2023-03-01 15:23:27,559] {logging_mixin.py:104} INFO - Running <TaskInstance: upload_to_gcs.upload_file 2023-03-01T15:18:31.057183+00:00 [running]> on host c1556e8405ac
+[2023-03-01 15:23:27,646] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=upload_to_gcs
+AIRFLOW_CTX_TASK_ID=upload_file
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-01T15:18:31.057183+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-01T15:18:31.057183+00:00
+[2023-03-01 15:23:27,680] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/contrib/hooks/gcs_hook.py:39 DeprecationWarning: The google_cloud_storage_conn_id parameter has been deprecated. You should pass the gcp_conn_id parameter.
+[2023-03-01 15:23:27,720] {taskinstance.py:1482} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 225, in _get_credentials_and_project_id
+    keyfile_dict_json = json.loads(keyfile_dict)
+  File "/usr/local/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1138, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/07_gcp.py", line 15, in upload_file_to_gcs
+    hook.upload(bucket_name, file_name, "rezaprimasatya.txt")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 459, in upload
+    client = self.get_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 151, in get_conn
+    credentials=self._get_credentials(), client_info=self.client_info, project=self.project_id
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 251, in _get_credentials
+    credentials, _ = self._get_credentials_and_project_id()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/google/common/hooks/base_google.py", line 227, in _get_credentials_and_project_id
+    raise AirflowException('Invalid key JSON.')
+airflow.exceptions.AirflowException: Invalid key JSON.
+[2023-03-01 15:23:27,734] {taskinstance.py:1532} INFO - Marking task as FAILED. dag_id=upload_to_gcs, task_id=upload_file, execution_date=20230301T151831, start_date=20230301T152327, end_date=20230301T152327
+[2023-03-01 15:23:27,788] {local_task_job.py:146} INFO - Task exited with return code 1

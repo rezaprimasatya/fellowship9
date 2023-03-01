@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "prefab-fabric-379314",
+  "private_key_id": "de2c8e5ff79cb08514fda085191955b80a643a67",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDI4kbpzVfBBFBB\nD8rBi8LKcj02Gx2P5gkw8ta2giDtC06mz+2vEnHM5v7UEvyCC60mfJL+8v70BOnB\netPOzsmbdDXmEeZG1p99BqwDWEcSmQ2LQMG0jxwR4rKmyWWDA7RyVlXnEFoLQVY5\nv2xJQVynGa0y2th6HOB8KS5OYT/rtmXaGL8ofajI4TNXNwS6OcSOhGDsRxsk/Rm7\nrsFw/JBLhm5HrlM+VXN0TH+NaEh2D281lTJNKbaMMvtJqmRfR3vi/Dae4ydbNa1o\nbc1m1NcUpdi3UFTa2p2uuiJXL417nVQlDiX3BBHsP5gQ/bkFu5emm6zpBXyHZgju\nTXdm/eNJAgMBAAECggEAA6qe87kpPwnL8zFiwynrX2mQCh2a6lue/aiOWFzDVWrt\nlRLaJOYNHgR1+ztGJj4opg6uWik86Qmb60meyw6wKakIgM9WfiLVsguooROqkcF/\nDfRxH1FgsvI0eOHX0KPagR8SnfneQt1UQbqSMztrrFXGI6r7Oi4Dv5BlhXhgmSCT\nVaBVivfDeHLfbEFeXzM/k1bUebHoVKxS5+/DSjH5irXYV+05hAsT8mlUEThFae/w\n+VRZBg+5ubx8/Elj0IBYu07Fx4JWA8SmrNSbj+a71RvNcBjUNoGwGKoCIn6g6pes\nHXOkgDMgIATUlxtCWxDzHwicA55lgf+HqQiQTBfHAQKBgQDymmRYIqOdmTkIeZAu\n07n+wXxeoFQzkjnK2vgUitw2Mpakh9kUe18qODabJNdJhNbJoxvYtFrA33IkXbBw\nWZsrr97LA39FCWt3yZjTIk2jYHIz8ycaRsebd+TnJc10BV1jOnzf3xk4wFeBQLxi\nkr7x9NgSh4QxB95lrGB27eCLQQKBgQDT+hzy/ybRUgpJOpRnIcGPPlZ8Y1Zhnfc5\n2S/U9voihTfB826i5lyfvEtLRNwxugkwjc3Gg+yTRVZasoobkTagGhwU+hFpPCOA\nmgcCXNzdoakOwwiq5rS/b9iXbv/ZWiitArtfvOW/2dcxr6ZcnybW/kLu1UWOnXLO\n+YpE7M9+CQKBgQCs4GIy//QRwPcIV//rroqyxFQI5j06RrASIvl3QgBsSp5Yfkmt\ns8B7yHT5F0amqBeatjWItfSZzmB7E5xAY0oU1o1vo31Ux8KiKLFTevVSP88Bv/qU\nWe2xlr0yDhka3RvQMwR7T3Kco0t32pajs6iHqI80nQcRHWdYkn5nIVnKQQKBgQCj\nA4IFwQA6EuxEGl+L3CK9JMRfzgjc8xzviL1G+lOr/mS9q5YWgi8SzDve+2qWdymg\nBD0N/+AL9VOOViTtREQM5WdZHmILWqs2t7zSLVXQvwSCjKv6uYagfcPD2SG6JaKI\nQkSUQHEyk7TwydKXAfFdfpU8lBh0r1JeJvsVPEPo+QKBgGGclBTPh72JTRJDZmUb\nlaJthpdLABGbUYJ5gjYUaUWi8upn/4o5oeQQwVfiBGZ7ipT/trMmRaCeptKUjj/D\nrxki7srPgORDk4QGU7pf4xTQf+aj7+JB+6QIFZIoG2YSbAxcb4c8F6FgPCCBWlqJ\ns6bXTHS3/6LnlsX0um6mzfn7\n-----END PRIVATE KEY-----\n",
+  "client_email": "fellowship@prefab-fabric-379314.iam.gserviceaccount.com",
+  "client_id": "112413844548807877675",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/fellowship%40prefab-fabric-379314.iam.gserviceaccount.com"
+}
